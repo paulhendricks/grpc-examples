@@ -9,12 +9,6 @@ docker build -t grpc .
 Run the server:
 
 ```bash
-docker run -it --rm -d -u $(id -u):$(id -g) -p 50051:50051 -v $PWD:$PWD -w $PWD grpc python3 helloworld/greeter_server.py
-```
-
-Run the server:
-
-```bash
 docker run -it --rm -d -u $(id -u):$(id -g) -v $PWD:$PWD -w $PWD grpc python3 helloworld/greeter_server.py
 ```
 
